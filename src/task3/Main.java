@@ -105,7 +105,6 @@ public class Main {
         ClimbingGroup group2 = new ClimbingGroup("Группа B", elbrus, random.nextBoolean());
         ClimbingGroup group3 = new ClimbingGroup("Группа C", montBlanc, random.nextBoolean());
 
-        // Добавляем предварительных альпинистов (все они в возрасте 20–50)
         boolean originalStatus1 = group1.getIsRecruiting();
         group1.setRecruiting(true);
         group1.addAlpinist(new Alpinist("Иван", 30, "Москва"));
@@ -160,7 +159,6 @@ public class Main {
             System.out.println("Введите возраст:");
             int age = scanner.nextInt();
 
-            // Проверка возраста: от 20 до 50 лет включительно
             if (age < 20) {
                 System.out.println("Ошибка: альпинист должен быть не младше 20 лет!");
                 scanner.nextLine();
